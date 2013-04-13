@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 using OpenTK;
 using XKeys = Microsoft.Xna.Framework.Input.Keys;
 
-namespace WinFormsTemplate.Controls
+namespace MonoGameWinForms
 {
     public abstract class GraphicsDeviceControl : GLControl
     {
@@ -213,7 +213,7 @@ namespace WinFormsTemplate.Controls
             private set { _keys = value; }
         }
 
-        internal new void ProcessKeyMessage (ref Message m)
+        public new void ProcessKeyMessage (ref Message m)
         {
             if (m.Msg == WM_KEYDOWN) {
                 XKeys xkey = KeyboardUtil.ToXna((Keys)m.WParam);

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace WinFormsTemplate.Controls
+namespace MonoGameWinForms
 {
     public class ServiceEventArgs : EventArgs
     {

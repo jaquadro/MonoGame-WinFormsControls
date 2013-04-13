@@ -2,7 +2,7 @@ using System;
 using System.Threading;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace WinFormsTemplate.Controls
+namespace MonoGameWinForms
 {
     public class GraphicsDeviceService : IGraphicsDeviceService
     {
