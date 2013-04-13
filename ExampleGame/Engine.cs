@@ -88,6 +88,25 @@ namespace ExampleGame
             _spriteBatch.End();
         }
 
+        public int BallCount
+        {
+            get { return _balls.Count; }
+        }
+
+        public void AddBall ()
+        {
+            Ball ball = new Ball() { Radius = BallRadius };
+            ball.Randomize(_graphicsDevice.Viewport.Bounds);
+
+            _balls.Add(ball);
+        }
+
+        public void RemoveBall ()
+        {
+            if (_balls.Count > 0)
+                _balls.RemoveAt(_balls.Count - 1);
+        }
+
         private static Texture2D SolidColorTexture (GraphicsDevice device, Color color)
         {
             Texture2D tex = new Texture2D(device, 1, 1);

@@ -41,5 +41,13 @@ namespace ExampleGame
             if (ev != null)
                 ev(this, e);
         }
+
+        public void SetBallCount (int count)
+        {
+            while (count > _engine.BallCount)
+                _engine.AddBall();
+            while (count < _engine.BallCount)
+                _engine.RemoveBall();
+        }
     }
 }

@@ -37,5 +37,10 @@ namespace ExampleGame
         {
             textBox1.Text = exampleGame1.BottomHitCount.ToString();
         }
+
+        private void numericUpDown1_ValueChanged (object sender, EventArgs e)
+        {
+            exampleGame1.SetBallCount((int)numericUpDown1.Value);
+        }
     }
 }

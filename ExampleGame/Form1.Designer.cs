@@ -28,12 +28,12 @@
         private void InitializeComponent ()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.exampleGame1 = new ExampleGame.Game1();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.exampleGame1 = new ExampleGame.Game1();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -63,6 +63,44 @@
             this.splitContainer1.SplitterDistance = 362;
             this.splitContainer1.TabIndex = 0;
             // 
+            // exampleGame1
+            // 
+            this.exampleGame1.BackColor = System.Drawing.Color.Black;
+            this.exampleGame1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.exampleGame1.Location = new System.Drawing.Point(0, 0);
+            this.exampleGame1.Name = "exampleGame1";
+            this.exampleGame1.Size = new System.Drawing.Size(476, 362);
+            this.exampleGame1.TabIndex = 0;
+            this.exampleGame1.VSync = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(123, 5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Miss Count:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(191, 3);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(55, 20);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "0";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(327, 4);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(146, 17);
+            this.checkBox1.TabIndex = 3;
+            this.checkBox1.Text = "Suppress Command Keys";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -83,44 +121,7 @@
             0,
             0,
             0});
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(327, 4);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(146, 17);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Suppress Command Keys";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // exampleGame1
-            // 
-            this.exampleGame1.BackColor = System.Drawing.Color.Black;
-            this.exampleGame1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.exampleGame1.Location = new System.Drawing.Point(0, 0);
-            this.exampleGame1.Name = "exampleGame1";
-            this.exampleGame1.Size = new System.Drawing.Size(476, 362);
-            this.exampleGame1.TabIndex = 0;
-            this.exampleGame1.VSync = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(191, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(55, 20);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "0";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(123, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Miss Count:";
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // Form1
             // 
