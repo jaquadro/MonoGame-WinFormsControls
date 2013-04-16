@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using Microsoft.Xna.Framework;
 using XKeys = Microsoft.Xna.Framework.Input.Keys;
 
-namespace MonoGameWinForms
+namespace MGWinForms
 {
     public abstract class GameControl : GraphicsDeviceControl
     {

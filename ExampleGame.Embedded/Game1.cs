@@ -1,7 +1,7 @@
 ﻿using System;
 using ExampleGame.Common;
 using Microsoft.Xna.Framework;
-using MonoGameWinForms;
+using MGWinForms;
 
 namespace ExampleGame
 {

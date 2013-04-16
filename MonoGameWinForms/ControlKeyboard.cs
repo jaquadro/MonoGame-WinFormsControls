@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
-namespace MonoGameWinForms
+namespace MGWinForms
 {
     // Matches the same signatures as Microsoft.Xna.Framework.Input.Keyboard
 

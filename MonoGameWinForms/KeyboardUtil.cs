@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using XKeys = Microsoft.Xna.Framework.Input.Keys;
 
-namespace MonoGameWinForms
+namespace MGWinForms
 {
     internal static class KeyboardUtil
     {

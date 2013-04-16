@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 using OpenTK;
 using XKeys = Microsoft.Xna.Framework.Input.Keys;
 
-namespace MonoGameWinForms
+namespace MGWinForms
 {
     public abstract class GraphicsDeviceControl : GLControl
     {

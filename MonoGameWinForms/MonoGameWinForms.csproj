@@ -8,8 +8,8 @@
     <ProjectGuid>{85BD604A-C94D-4058-94BE-6977C97A1291}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MonoGameWinForms</RootNamespace>
-    <AssemblyName>MonoGameWinForms</AssemblyName>
+    <RootNamespace>MGWinForms</RootNamespace>
+    <AssemblyName>MGWinForms</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>

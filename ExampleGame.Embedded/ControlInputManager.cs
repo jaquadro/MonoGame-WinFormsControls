@@ -1,6 +1,6 @@
 ﻿using ExampleGame.Common;
 using Microsoft.Xna.Framework.Input;
-using MonoGameWinForms;
+using MGWinForms;
 
 namespace ExampleGame
 {
