@@ -15,12 +15,26 @@ namespace MonoGameWinForms
 
         private List<XKeys> _keys;
 
+        private bool _active;
+
+        public GameControl ()
+        {
+            SuspendOnFormInactive = true;
+        }
+
+        public bool SuspendOnFormInactive { get; set; }
+
         protected override void Initialize ()
         {
             _keys = new List<XKeys>();
             _timer = Stopwatch.StartNew();
 
             Application.Idle += delegate { GameLoop(); };
+
+            if (ParentForm != null) {
+                ParentForm.Activated += HandleFormActivated;
+                ParentForm.Deactivate += HandleFormDeactivated;
+            }
         }
 
         protected override List<XKeys> KeyState
@@ -35,6 +49,10 @@ namespace MonoGameWinForms
 
         private void GameLoop ()
         {
+            if (SuspendOnFormInactive && !_active) {
+                return;
+            }
+
             _keys.Clear();
             _keys.AddRange(base.KeyState);
 
@@ -47,5 +65,16 @@ namespace MonoGameWinForms
 
         protected abstract void Update (GameTime gameTime);
         protected abstract void Draw (GameTime gameTime);
+
+        private void HandleFormActivated (object sender, EventArgs e)
+        {
+            _active = true;
+            _elapsed = _timer.Elapsed;
+        }
+
+        private void HandleFormDeactivated (object sender, EventArgs e)
+        {
+            _active = false;
+        }
     }
 }

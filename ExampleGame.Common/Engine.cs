@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using MonoGameWinForms;
 
-namespace ExampleGame
+namespace ExampleGame.Common
 {
     internal class Ball
     {
@@ -118,7 +117,7 @@ namespace ExampleGame
 
         private void UpdatePaddle (GameTime gameTime)
         {
-            KeyboardState keyboard = ControlKeyboard.GetState();
+            KeyboardState keyboard = InputManager.GetKeyboardState();
             if (keyboard.IsKeyDown(Keys.Left) && _paddleX > 0)
                 _paddleX -= (float)(300 * gameTime.ElapsedGameTime.TotalSeconds);
             else if (keyboard.IsKeyDown(Keys.Right) && _paddleX < (_graphicsDevice.Viewport.Width - PaddleWidth))
