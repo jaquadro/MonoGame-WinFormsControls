@@ -15,6 +15,8 @@ The intent is for this repository to unify the tutorials into a single solution 
 Project Structure
 -----------------
 
+* Control Example
+    * ExampleControl -- A sample control tracking mouse events to draw squares.  Updates as needed as opposed to running an update loop.
 * Game Example
     * ExampleGame.Common -- A sample game engine, representing the majority of game implementation.
     * ExampleGame.Embedded -- A WinForms project.  Runs the shared game code from an embedded GameControl class.  Also include extra WinForms interactions.

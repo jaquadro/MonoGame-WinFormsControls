@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleGame.Embedded", "Exa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleGame", "ExampleGame\ExampleGame.csproj", "{131D8B21-834C-4DFC-83EC-8C045680C6C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleControl", "ExampleControl\ExampleControl.csproj", "{6C8E5AF0-9015-41C1-A12A-E89E9B4BFB19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,16 @@ Global
 		{131D8B21-834C-4DFC-83EC-8C045680C6C3}.Release|Mixed Platforms.Build.0 = Release|x86
 		{131D8B21-834C-4DFC-83EC-8C045680C6C3}.Release|x86.ActiveCfg = Release|x86
 		{131D8B21-834C-4DFC-83EC-8C045680C6C3}.Release|x86.Build.0 = Release|x86
+		{6C8E5AF0-9015-41C1-A12A-E89E9B4BFB19}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{6C8E5AF0-9015-41C1-A12A-E89E9B4BFB19}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{6C8E5AF0-9015-41C1-A12A-E89E9B4BFB19}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{6C8E5AF0-9015-41C1-A12A-E89E9B4BFB19}.Debug|x86.ActiveCfg = Debug|x86
+		{6C8E5AF0-9015-41C1-A12A-E89E9B4BFB19}.Debug|x86.Build.0 = Debug|x86
+		{6C8E5AF0-9015-41C1-A12A-E89E9B4BFB19}.Release|Any CPU.ActiveCfg = Release|x86
+		{6C8E5AF0-9015-41C1-A12A-E89E9B4BFB19}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{6C8E5AF0-9015-41C1-A12A-E89E9B4BFB19}.Release|Mixed Platforms.Build.0 = Release|x86
+		{6C8E5AF0-9015-41C1-A12A-E89E9B4BFB19}.Release|x86.ActiveCfg = Release|x86
+		{6C8E5AF0-9015-41C1-A12A-E89E9B4BFB19}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
