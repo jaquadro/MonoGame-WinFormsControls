@@ -1,5 +1,5 @@
-MonoGame-WinForms
-=================
+MonoGame-WinFormsControls
+=========================
 
 This project contains a library with basic controls for embedding MonoGame content in WinForms.  The library can be used as-is, or it can be integrated directly into your codebase for further customization.
 
@@ -21,7 +21,7 @@ Project Structure
     * ExampleGame.Common -- A sample game engine, representing the majority of game implementation.
     * ExampleGame.Embedded -- A WinForms project.  Runs the shared game code from an embedded GameControl class.  Also include extra WinForms interactions.
     * ExampleGame -- A standard MonoGame project.  Runs the shared game code from a normal Game class.
-* MonoGameWinForms -- A basic library containing GraphicsDeviceControl and GameControl base controls.
+* MGWinFormsControls -- A basic library containing GraphicsDeviceControl and GameControl base controls.
 
 [1]: http://xbox.create.msdn.com/en-US/education/catalog/sample/winforms_series_1
 [2]: http://jaquadro.com/2013/03/bringing-your-xna-winforms-controls-to-monogame-opengl

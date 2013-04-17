@@ -79,9 +79,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MonoGameWinForms\MonoGameWinForms.csproj">
+    <ProjectReference Include="..\MonoGameWinForms\MGWinFormsControls.csproj">
       <Project>{85BD604A-C94D-4058-94BE-6977C97A1291}</Project>
-      <Name>MonoGameWinForms</Name>
+      <Name>MGWinFormsControls</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
