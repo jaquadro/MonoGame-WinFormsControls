@@ -42,7 +42,9 @@ namespace OpenTK
                 throw new ArgumentNullException("mode");
             if (control == null)
                 throw new ArgumentNullException("control");
-            
+
+            Toolkit.Init();
+
             if (Configuration.RunningOnWindows) return new WinGLControl(mode, control);
             else if (Configuration.RunningOnMacOS) return new CarbonGLControl(mode, control);
             else if (Configuration.RunningOnX11) return new X11GLControl(mode, control);
